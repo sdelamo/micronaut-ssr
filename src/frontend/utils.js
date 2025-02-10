@@ -5,6 +5,5 @@ function getSsrUtils() {
 
 export const fetch = async ({ url }) => {
     const { fetch } = getSsrUtils();
-    const { onPromiseCreation } = fetch(url);
-    return await new Promise(onPromiseCreation);
+    return await new Promise(fetch(url));
 };

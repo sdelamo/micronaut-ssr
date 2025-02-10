@@ -73,7 +73,7 @@ tasks.register<Exec>("buildFrontend") {
     commandLine = listOf(getNpmCmd(), "run", "build")
 }
 
-tasks.compileJava {
-    dependsOn("buildFrontend")
-}
+//tasks.compileJava {
+//    dependsOn("buildFrontend")
+//}
 
